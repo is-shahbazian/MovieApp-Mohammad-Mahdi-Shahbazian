@@ -1,0 +1,29 @@
+using System;
+
+namespace StudentGrades
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // آرایه‌ای از نام دانش‌آموزان
+            string[] studentNames = { "علی", "مینا", "رضا", "سارا", "امید", "فاطمه", "مهدی", "زهرا", "نیما" };
+
+            // آرایه‌ای از نمرات دانش‌آموزان
+            int[] grades = { 15, 8, 19, 12, 7, 10, 5, 13, 18 };
+
+            // بررسی نام و نمره هر دانش‌آموز
+            for (int i = 0; i < grades.Length; i++)
+            {
+                if (grades[i] > 9)
+                {
+                    Console.WriteLine($"دانش‌آموز {studentNames[i]}: قبول");
+                }
+                else
+                {
+                    Console.WriteLine($"دانش‌آموز {studentNames[i]}: رد شدی");
+                }
+            }
+        }
+    }
+}
